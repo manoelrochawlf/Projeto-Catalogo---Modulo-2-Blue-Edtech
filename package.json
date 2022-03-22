@@ -1,0 +1,25 @@
+{
+  "name": "projeto-pokedex",
+  "version": "1.0.0",
+  "description": "Projeto Pokedex - Blue Edtech",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manoelrochawlf/Projeto-Pokedex.git"
+  },
+  "author": "Manoel Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manoelrochawlf/Projeto-Pokedex/issues"
+  },
+  "homepage": "https://github.com/manoelrochawlf/Projeto-Pokedex#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
