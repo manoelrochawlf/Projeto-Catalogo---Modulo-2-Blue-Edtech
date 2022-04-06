@@ -18,14 +18,14 @@
         <div class="card">
                     <p><%= element.nome %></p>
                     <img src="<%= element.img %>" alt="">
-                <div class="btn-container">
+                <section class="btn-container">
+                    <a href="/edit/<%= element.id %> ">
+                        <img class="edit-icon" src="/img/lapisimg.png" alt="edit icon">
+                     </a>
                     <a href="/delete/<%= element.id %> ">
                         <img class="delete-icon" src="/img/deleteimg.png" alt="delete icon">
                     </a>
-                    <a href="/edit/<%= element.id %> ">
-                       <img class="edit-icon" src="/img/lapisimg.png" alt="edit icon">
-                    </a>
-                </div>
+                </section>
                     
         </div>
             <% }) %>

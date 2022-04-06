@@ -47,6 +47,7 @@ export const getCreate = (req, res) => {
 }
 
 export const postCreate = async (req, res) => {
+  
   try {
       const { nome, posicao, img, anonascimento, quantosgols } = req.body
       await jogadores.create({
@@ -57,6 +58,7 @@ export const postCreate = async (req, res) => {
   catch(err){
       res.send(err.message)
   }
+
 }
 
 export const getEdit = async (req, res) => {
