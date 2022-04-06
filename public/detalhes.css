@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@1,300&display=swap');
 
 body{
-    background-color: #DCDCDC;
+    background-color: #000000
 }
 
 * {
@@ -12,48 +12,42 @@ body{
 
 header{
     padding: 25px;
-    background-color: red;
-}
-
-header h1 {
-    color: aliceblue;
-    font-size: 2rem;
+    background-color: white;
     text-align: center;
-}
-
-main{
-    margin: 0 10rem 0 10rem;
+    justify-content: space-evenly;
 }
 
 section#cards{
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 2rem;
 }
 
 section#cards div.card{
-    width: 50rem;
-    font-size: 15px;
-    box-shadow: 5px 10px 5px tomato;
-    padding: 1rem;
+    width: 15rem;
+    font-size: 20px;
+    box-shadow: 5px 10px 5px #696969;
     background-color: white;
-    color: red;
+    padding: 1rem;
+    color: black;
 }
 
 section#cards div.card:hover{
     transform-style: flat;
-    background-color: red;
-    color: white;
+    background-color: #C0C0C0;
+    color: red;
+    box-shadow: 5px 10px 5px white
 }
 
 a {
-    text-decoration: none
-    red
+    text-decoration: none;
+    color: black;
 }
 
 section#cards div.card img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 section#cards div.card p.descricao {
@@ -70,4 +64,8 @@ body::-webkit-scrollbar {
   
   body::-webkit-scrollbar-thumb {
     background-color: #FF6347;    /* color of the scroll thumb */
+  }
+
+  form {
+      color: white;
   }

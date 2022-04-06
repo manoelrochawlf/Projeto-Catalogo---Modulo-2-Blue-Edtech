@@ -10,25 +10,20 @@
 <body>
 
     <header>
-        <h1>Pokedex</h1>
+        <%- include('./partials/header.ejs') %>
     </header>
 
     <main>
         <section id="cards">
-
-        <% nowPoke.forEach((pokemon) => { %>
-        <a href="/detalhes/<%= pokemon.id %>">
             <div class="card">
-                <p>id: #<%= pokemon.id %></p>
-                <img src="<%= pokemon.img %>" alt="">
-                <h2><%= pokemon.name %></h2>
-                <p class="descricao"><%= pokemon.height %></p>
-                <p class="descricao"><%= pokemon.weight %></p>
-                <span>Tipo: <%= pokemon.type %></span>
-            </div>
-            <% }) %>
-            </a>
-            </section>
+                    <img src="<%= idoloVasco.img %>" alt="">
+                    <h2><%= idoloVasco.nome %></h2>
+                    <p class="descricao"> Gols pelo Vasco: <%= idoloVasco.quantosgols %></p>
+                    <p class="descricao"> Nasceu em: <%= idoloVasco.anonascimento %></p>
+                    <span>Posição: <%= idoloVasco.posicao %></span>
+            </div>        
+            
+        </section>
     </main>
 
     

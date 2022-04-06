@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex do Manoel</title>
+    <title>Idolos Vasco</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Pokedex</h1>
-    </header>
+        <%- include('./partials/header.ejs') %>
 
     <main>
         <section id="cards">
 
-        <% pokedexArr.forEach((pokemon) => { %>
-        <a href="/detalhes/<%= pokemon.id %>">
+        <% idolosVasco.forEach((element) => { %>
+        <a href="/detalhes/<%= element.id %>">
         <div class="card">
-                    <p>id: #<%= pokemon.id %></p>
-                    <img src="<%= pokemon.img %>" alt="">
-                    <h2><%= pokemon.name %></h2>
-                    <p class="descricao"><%= pokemon.height %></p>
-                    <p class="descricao"><%= pokemon.weight %></p>
-                    <span>Tipo: <%= pokemon.type %></span>
+                    <p><%= element.nome %></p>
+                    <img src="<%= element.img %>" alt="">
+                <div class="btn-container">
+                    <a href="/delete/<%= element.id %> ">
+                        <img class="delete-icon" src="/img/deleteimg.png" alt="delete icon">
+                    </a>
+                    <a href="/edit/<%= element.id %> ">
+                       <img class="edit-icon" src="/img/lapisimg.png" alt="edit icon">
+                    </a>
                 </div>
+                    
+        </div>
             <% }) %>
             </a>
             </section>

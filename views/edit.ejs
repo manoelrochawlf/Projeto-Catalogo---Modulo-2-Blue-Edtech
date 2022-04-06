@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title> Criar </title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <form action="/edit/<%= idoloVasco.id %>" method="post">
+            <legend> Editar Jogador  </legend>
+            <fieldset>
+                <input type="text" name="nome" value="<%= idoloVasco.nome %> ">
+                <label for="nome"> Nome </label>
+            </fieldset>
+            
+            <fieldset>
+                <input type="text" name="posicao" value="<%= idoloVasco.posicao %>">
+                <label for="posicao"> Posicao </label>
+            </fieldset>
+            
+            <fieldset>
+                <input type="url" name="img" value="<%= idoloVasco.img %> ">
+                <label for="img"> Img </label>
+            </fieldset>
+            
+            <fieldset>
+                <input type="text" name="anonascimento" value="<%= idoloVasco.anonascimento %> ">
+                <label for="anonascimento"> Ano de Nascimento </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" name="quantosgols" value=" <%= idoloVasco.quantosgols %> ">
+                <label for="quantosgols"> Gols pelo Vasco </label>
+            </fieldset>
+
+            <div id="btn-container">
+                <button type="submit"> Enviar </button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
