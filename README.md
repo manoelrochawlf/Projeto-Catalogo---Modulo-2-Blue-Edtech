@@ -1,4 +1,4 @@
-# Projeto Final - Catálogo - BlueTech
+# Projeto Final - Catálogo - BlueEdtech
 
 ## Descrição do Projeto
 Projeto feito no módulo 2 da Blue - Edtech, buscando a aplicação de SQL, Ejs, Html, Css e etc.
